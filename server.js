@@ -15,7 +15,7 @@ console.log('Scraper listening on port 8080')
 
 module.exports = app
 let sub = readlineSync.question('What subreddit shall we scrape?')
-let url = `https://www.reddit.com/${sub}`
+let url = `https://www.reddit.com/r/${sub}`
 
 function scrape(req, res) {
 
